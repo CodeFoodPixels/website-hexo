@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__spaceship">
+                <img src="img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+            </div>
+            <div class="header__text">
+                <div class="header__name">Luke
+                    <br>Bonaccorsi</div>
+                <div class="header__start js-start">Press Start</div>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__content">
+                <input type="checkbox" id="show-menu" class="nav__toggle-checkbox" role="button">
+                <label for="show-menu" class="nav__item nav__toggle">Menu</label>
+                <div class="nav__item">Blog</div>
+                <div class="nav__item">About</div>
+                <div class="nav__item">Projects</div>
+                <div class="nav__item">GitHub</div>
+                <div class="nav__item">Twitter</div>
+            </div>
+        </nav>
+        <main class="content">
+            <%- body %>
+        </main>
+        <footer class="footer">&copy; Luke Bonaccorsi 2017</footer>
+        <script type="text/javascript" src="js/easter.js"></script>
+    </body>
+</html>
