@@ -1,25 +1,28 @@
-<article>
-    <header>
+<article class="content__article">
+    <header class="content__header">
         <h1><%- post.title %></h1>
         <div class="content__meta">
-            <time datetime="<%= date_xml(post.date) %>"><%= date(post.date, date_format) %></time>
+            <time datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
         </div>
     </header>
     <% if (index) { %>
         <% if (post.excerpt) { %>
             <%- post.excerpt %>
         <% } %>
-        <p class="article-more-link">
+        <p>
             <a href="<%- url_for(post.path) %>">Read More</a>
         </p>
     <% } else { %>
         <%- post.content %>
     <% } %>
     <footer>
-        <% if (!index && post.tags && post.tags.length){ %>
+        <% if (post.tags && post.tags.length){ %>
             <%- list_tags(post.tags, {
             show_count: false,
-            class: 'article-tag'
+            style: false,
+            transform: (name) => {
+                return `#${name}`;
+            }
           }) %>
         <% } %>
     </footer>

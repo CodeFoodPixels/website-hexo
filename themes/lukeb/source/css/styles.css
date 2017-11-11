@@ -38,7 +38,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .easter {
@@ -90,6 +90,9 @@ h4 {
     transform: perspective(31px) rotateX(5deg);
     transform-origin: 50% 100%;
     margin-bottom: 8px;
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 .header__start {
@@ -146,10 +149,13 @@ h4 {
     border: 4px solid #D53535;
     border-style: outset;
     display: none;
+    text-decoration: none;
 }
 
-.nav__item.active {
+.nav__item:not(.nav__toggle):hover {
     border-style: inset;
+    padding-top: 10px;
+    padding-bottom: 6px;
 }
 
 .nav__toggle {
@@ -191,9 +197,13 @@ h4 {
     flex: 1;
 }
 
-.content header {
+.content__article:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.content__header {
     border-bottom: 1px dashed black;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .content h1,
@@ -202,14 +212,25 @@ h4 {
 .content h4 {
     font-family: 'press_start_2pregular', monospace;
     line-height: 150%;
+    margin-bottom: 16px;
 }
 
 .content__meta {
-    margin-bottom: 1em;
+    margin-bottom: 16px;
+}
+
+.content__pagination {
+    text-align: center;
+}
+
+.content__pagination .page-number,
+.content__pagination .next,
+.content__pagination .prev {
+    margin: 0 4px;
 }
 
 .content p {
-    margin-bottom: 1em;
+    margin-bottom: 16px;
 }
 
 .footer {

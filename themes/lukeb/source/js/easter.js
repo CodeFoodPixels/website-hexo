@@ -62,14 +62,14 @@ function loadGame() {
         animationDivider: 4,
         image: new Image()
     };
-    asteroid.image.src = 'img/asteroid.png';
+    asteroid.image.src = '/img/asteroid.png';
 
     var spaceship = {
         width: 136,
         height: 68,
         image: new Image()
     }
-    spaceship.image.src = 'img/spaceship.png';
+    spaceship.image.src = '/img/spaceship.png';
 
     var background = {
         width: 200,
@@ -77,7 +77,7 @@ function loadGame() {
         velocity: 3,
         image: new Image()
     }
-    background.image.src = 'img/stars.png';
+    background.image.src = '/img/stars.png';
 
     var state;
 

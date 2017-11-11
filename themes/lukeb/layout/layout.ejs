@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
-        <link rel="stylesheet" href="css/styles.css" />
+        <title>
+            <% if (page.title) { %>
+                <%- page.title %> -
+            <% } %>
+            Luke Bonaccorsi
+        </title>
+        <link rel="stylesheet" href="/css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
     </head>
@@ -10,11 +15,10 @@
     <body>
         <header class="header">
             <div class="header__spaceship">
-                <img src="img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
+                <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
             </div>
             <div class="header__text">
-                <div class="header__name">Luke
-                    <br>Bonaccorsi</div>
+                <a href="<%- url_for() %>" class="header__name">Luke Bonaccorsi</a>
                 <div class="header__start js-start">Press Start</div>
             </div>
         </header>
@@ -22,17 +26,17 @@
             <div class="nav__content">
                 <input type="checkbox" id="show-menu" class="nav__toggle-checkbox" role="button">
                 <label for="show-menu" class="nav__item nav__toggle">Menu</label>
-                <div class="nav__item">Blog</div>
-                <div class="nav__item">About</div>
-                <div class="nav__item">Projects</div>
-                <div class="nav__item">GitHub</div>
-                <div class="nav__item">Twitter</div>
+                <a href="<%- url_for() %>" class="nav__item">Blog</a>
+                <a href="<%- url_for('/about') %>" class="nav__item">About</a>
+                <a href="<%- url_for('/projects') %>" class="nav__item">Projects</a>
+                <a href="https://github.com/lukeb-uk" class="nav__item">GitHub</a>
+                <a href="https://twitter.com/LukeB_UK" class="nav__item">Twitter</a>
             </div>
         </nav>
         <main class="content">
             <%- body %>
         </main>
         <footer class="footer">&copy; Luke Bonaccorsi 2017</footer>
-        <script type="text/javascript" src="js/easter.js"></script>
+        <script type="text/javascript" src="/js/easter.js"></script>
     </body>
 </html>
