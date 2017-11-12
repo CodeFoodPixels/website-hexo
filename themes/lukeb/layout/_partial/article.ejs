@@ -8,6 +8,8 @@
     <% if (index) { %>
         <% if (post.excerpt) { %>
             <%- post.excerpt %>
+        <% } else { %>
+            <%- post.content %>
         <% } %>
         <p>
             <a href="<%- url_for(post.path) %>">Read More</a>
