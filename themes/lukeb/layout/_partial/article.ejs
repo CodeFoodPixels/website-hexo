@@ -1,6 +1,12 @@
 <article class="content__article">
     <header class="content__header">
-        <h1><%- post.title %></h1>
+        <h1>
+            <% if (index) { %>
+                <a href="<%- url_for(post.path) %>"><%- post.title %></a>
+            <% } else { %>
+                <%- post.title %>
+            <% } %>
+        </h1>
         <div class="content__meta">
             <time datetime="<%= date_xml(post.date) %>"><%= date(post.date) %></time>
         </div>
