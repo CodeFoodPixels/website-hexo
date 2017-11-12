@@ -78,3 +78,12 @@ theme: lukeb
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+feed:
+  type: rss
+  path: rss.xml
+  limit: 0
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '

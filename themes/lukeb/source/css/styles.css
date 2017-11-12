@@ -101,6 +101,7 @@ h4 {
     justify-content: center;
     animation: 1.5s linear alternate infinite blink;
     will-change: color;
+    cursor: pointer;
 }
 
 .easter .header__start {
@@ -215,6 +216,10 @@ h4 {
     margin-bottom: 16px;
 }
 
+.content img {
+    max-width: 100%;
+}
+
 .content__meta {
     margin-bottom: 16px;
 }
@@ -288,18 +293,22 @@ h4 {
     .header__spaceship-image {
         margin-left: 16px;
     }
-    .nav__item {
-        flex: 1;
-        display: block;
-    }
-    .nav__toggle,
-    .nav__toggle-checkbox:checked~.nav__toggle {
-        display: none;
-    }
     .content {
         border-left: 16px solid #000000;
         border-right: 16px solid #000000;
     }
+}
+
+@media screen and (min-width: 700px) {
+     .nav__item {
+         flex: 1;
+         display: block;
+     }
+
+     .nav__toggle,
+     .nav__toggle-checkbox:checked~.nav__toggle {
+         display: none;
+     }
 }
 
 @media screen and (min-width: 800px) {

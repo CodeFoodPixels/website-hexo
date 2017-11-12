@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="/css/styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+        <link rel="alternate" type="application/rss+xml" title="RSS Feed for lukeb.co.uk" href="/rss.xml" />
     </head>
 
     <body>
@@ -31,6 +32,7 @@
                 <a href="<%- url_for('/projects') %>" class="nav__item">Projects</a>
                 <a href="https://github.com/lukeb-uk" class="nav__item">GitHub</a>
                 <a href="https://twitter.com/LukeB_UK" class="nav__item">Twitter</a>
+                <a href="<%- url_for('/rss.xml') %>" class="nav__item">RSS</a>
             </div>
         </nav>
         <main class="content">
