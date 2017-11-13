@@ -80,7 +80,7 @@ deploy:
   type:
 
 feed:
-  type: rss
+  type: rss2
   path: rss.xml
   limit: 0
   hub:
