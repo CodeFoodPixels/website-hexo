@@ -7,7 +7,7 @@ hexo generate
 cd public
 git checkout -b $BRANCH
 git add .
-git diff-index --quiet HEAD --
+git diff-index --quiet HEAD -- ':(exclude)rss.xml'
 if [ "$?" != "0" ]; then
     git commit -m "Build $BRANCH"
     git push --set-upstream origin $BRANCH
