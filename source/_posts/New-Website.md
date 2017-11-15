@@ -3,7 +3,7 @@ title: New Website!
 date: 2017-11-12 18:31:44
 tags:
 ---
-My previous site hadn't been touched since late 2014 and was running using a custon PHP system I'd written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.
+My previous site hadn't been touched since late 2014 and was running using a custom PHP system I'd written that took markdown and produced the page. This was happening every time someone hit the page so was pretty inefficient.
 
 As my focus is no longer on PHP, I wanted to move towards something JavaScript based. I didn't want to use a client side framework to do this, as the content is pretty static and I feel it would be needless to require JavaScript to present static content.
 
