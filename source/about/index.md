@@ -15,7 +15,7 @@ I organise and host the [LeedsJS](https://www.meetup.com/LeedsJS/) community gro
 - Bet Tribe Tech Talks: March 2017 - [Video](https://www.youtube.com/watch?v=-fR9lc3AKtw)
 - SheffieldJS: June 2017
 - Leeds Testing Atelier V: October 2017
-- JSConf Budapest 2017: October 2017
+- JSConf Budapest 2017: October 2017 - [Video](https://www.youtube.com/watch?v=dAqKa3waNx8)
 
 Outside of tech, my other big passion is food and cooking. I enjoy trying different recipes and techniques, as well as learning to use new ingredients.
 
