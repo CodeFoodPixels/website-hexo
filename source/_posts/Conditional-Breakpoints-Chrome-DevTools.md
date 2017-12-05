@@ -1,5 +1,5 @@
 ---
-title: Conditional Breakpoints
+title: Conditional Breakpoints In Chrome DevTools
 date: 2017-12-05 10:00:00
 tags:
  - devtools
@@ -9,7 +9,7 @@ A really useful feature that I often find myself using in Chrome DevTools is con
 
 <!-- more -->
 
-## How to use conditional breakpoints
+## How to use conditional breakpoints in Chrome DevTools
 
 1. In the "Sources" panel in Chrome DevTools, open the JavaScript file that you want to debug.
 
