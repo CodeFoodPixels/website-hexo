@@ -15,7 +15,7 @@ A really useful feature that I often find myself using in Chrome DevTools is con
 
 2. Right click on the line number of the line you want to add the breakpoint to and select "Add conditional breakpoint".
 
-    ![The breakpoint context menu. Add conditional breakpoint is the 3rd option](breapoint-context-menu.png)
+    ![The breakpoint context menu. Add conditional breakpoint is the 3rd option](breakpoint-context-menu.png)
 
 3. Add your conditional statement into the text box. Your condition must be truthy when you want it to break. In my example I want it to break when there is more than one asteroid in the list.
 
