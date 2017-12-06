@@ -1,8 +1,10 @@
 #! /bin/bash
+shopt -s extglob
 
 BRANCH=$(date +%F_%H-%M-%S)
 rm -rf public
 git clone --depth=1 https://$GITHUB_KEY@github.com/$REPO_OWNER/$REPO.git public
+rm -rf public/!(CNAME|README.md)
 hexo generate
 cd public
 git checkout -b $BRANCH
