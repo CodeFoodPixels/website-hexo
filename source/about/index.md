@@ -10,16 +10,24 @@ My expertise mainly lies in HTML, CSS and JavaScript, including a myriad of fram
 
 I organise and host the [LeedsJS](https://www.meetup.com/LeedsJS/) community group and have been the main organiser since April 2016. I have also spoken at a number of events and conferences.
 
+Outside of tech, my other big passion is food and cooking. I enjoy trying different recipes and techniques, as well as learning to use new ingredients.
+
+I also enjoy pixel art and will occasionally post pieces to Twitter.
+
+## Speaking
+I have spoken at a number of events and conferences. If you think I may be interested in a speaking opportunity, please get in contact using the methods at the bottom of this page.
+
+### How I Ended Up Automating My Curtains And Shouting At My Laptop
+
 - LeedsJS: November 2016
 - ManchesterJS: March 2017
 - Bet Tribe Tech Talks: March 2017 - [Video](https://www.youtube.com/watch?v=-fR9lc3AKtw)
 - SheffieldJS: June 2017
-- Leeds Testing Atelier V: October 2017
 - JSConf Budapest 2017: October 2017 - [Video](https://www.youtube.com/watch?v=dAqKa3waNx8)
 
-Outside of tech, my other big passion is food and cooking. I enjoy trying different recipes and techniques, as well as learning to use new ingredients.
+### Testing With Snapshots
 
-I also enjoy pixel art and will occasionally post pieces to Twitter.
+- Leeds Testing Atelier V: October 2017 - [Video](https://www.youtube.com/watch?v=uzfydKkSAuc)
 
 ## Contact
 The best way to get in touch with me is through [Twitter](https://twitter.com/LukeB_UK). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk). As nice as the interest is, please do not contact me with recruitment material.
