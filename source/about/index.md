@@ -2,7 +2,7 @@
 title: About
 date: 2017-11-11 22:27:50
 ---
-![Me, but with more hair](/img/luke-bonaccorsi.jpg)
+![Me speaking at JSConf Budapest](/img/luke-bonaccorsi.jpg)
 
 Hi, I'm Luke. I'm a 27 year old self-taught web developer/software engineer currently living near Leeds, UK and working for [Sky Betting & Gaming](https://www.skybetcareers.com/).
 
@@ -24,6 +24,7 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - Bet Tribe Tech Talks: March 2017 - [Video](https://www.youtube.com/watch?v=-fR9lc3AKtw)
 - SheffieldJS: June 2017
 - JSConf Budapest 2017: October 2017 - [Video](https://www.youtube.com/watch?v=dAqKa3waNx8)
+- GDG Devfest Coimbra: December 2017
 
 ### Testing With Snapshots
 
