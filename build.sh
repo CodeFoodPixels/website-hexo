@@ -8,7 +8,7 @@ rm -rf public
 git clone --depth=1 https://$GITHUB_KEY@github.com/$REPO_OWNER/$REPO.git public
 rm -rf public/!(CNAME|README.md)
 
-hexo generate
+npm run build
 
 # If this is a Greenkeeper branch, we don't want to submit a PR
 if [[ $(git branch --remote --verbose --no-abbrev --contains | sed -rne 's/^[^\/]*\/([^\ ]+).*$/\1/p') =~ ^greenkeeper/.*$ ]]; then
