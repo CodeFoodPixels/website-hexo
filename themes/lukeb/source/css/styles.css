@@ -221,6 +221,14 @@ h4 {
     margin-bottom: 16px;
 }
 
+.content code {
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    color: #bb1b1b;
+    white-space: nowrap;
+}
+
 .content img {
     max-width: 100%;
 }
@@ -241,6 +249,7 @@ h4 {
 
 .content p {
     margin-bottom: 16px;
+    line-height: 20px;
 }
 
 .footer {
