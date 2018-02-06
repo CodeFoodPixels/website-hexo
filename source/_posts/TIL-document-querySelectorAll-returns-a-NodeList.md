@@ -14,7 +14,7 @@ A NodeList is still a collection, but it doesn't have the Array prototype method
 ``` javascript
 var elements = document.querySelectorAll('.content__article');
 
-[].filter.call(elements, function(el) {
+elements = [].filter.call(elements, function(el) {
     // Your filter code goes here
 });
 ```
