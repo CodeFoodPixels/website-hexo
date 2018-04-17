@@ -18,13 +18,17 @@ I also enjoy pixel art and will occasionally post pieces to Twitter.
 I have spoken at a number of events and conferences. If you think I may be interested in a speaking opportunity, please get in contact using the methods at the bottom of this page.
 
 ### How I Ended Up Automating My Curtains And Shouting At My Laptop
-
+#### Past
 - LeedsJS: November 2016
 - ManchesterJS: March 2017
 - Bet Tribe Tech Talks: March 2017 - [Video](https://www.youtube.com/watch?v=-fR9lc3AKtw)
 - SheffieldJS: June 2017
 - JSConf Budapest 2017: October 2017 - [Video](https://www.youtube.com/watch?v=dAqKa3waNx8)
 - GDG Devfest Coimbra: December 2017
+
+#### Upcoming
+- Fullstack: July 2018
+- ScotlandJS: July 2018
 
 ### Testing With Snapshots
 
