@@ -16,9 +16,11 @@ I guess this should be the first step, because you need to have stuff to be able
 
 1) Ask companies to give you stuff. When I first got involved in LeedsJS I reached out through Twitter to one of the developer advocates at Google and after a few emails I had some Google merchandise to give away.
 
-2) Company sponsorship schemes. A few companies have proper schemes where they'll give merchandise or their products away to community groups. A couple of examples are [Jetbrains](https://www.jetbrains.com/community/support/#section=communities) and [GitHub](https://community.github.com/)
+2) Company sponsorship schemes. A few companies have proper schemes where they'll give merchandise or their products away to community groups. A couple of examples are [Jetbrains](https://www.jetbrains.com/community/support/#section=communities) and [GitHub](https://community.github.com/).
 
 3) Get sponsors to buy you stuff. If there are companies interested in sponsoring your events, an alternative to getting them to buy the food or drinks is to ask them to buy some prizes. This could be books, subscription codes or software licenses, but that's something to discuss with the sponsor.
+
+4) Conferences will sometimes give you a ticket to give away in return for a bit of promotion, so it may be worth asking. They will also sometimes have a discount code that you can make available to your members.
 
 ## Ways to give your stuff away
 With LeedsJS we've tried a couple of ways to give our prizes away.
