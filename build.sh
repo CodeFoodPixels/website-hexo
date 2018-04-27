@@ -6,9 +6,12 @@ BRANCH=$(date +%F_%H-%M-%S)
 # Delete the public folder, clone it down and remove everything that'll be generated
 rm -rf public
 git clone --depth=1 https://$GITHUB_KEY@github.com/$REPO_OWNER/$REPO.git public
-rm -rf public/!(CNAME|README.md)
+
+mv public/db.json db.json
 
 npm run build
+
+mv db.json public/db.json
 
 # If this is a Greenkeeper branch, we don't want to submit a PR
 if [[ $(git branch --remote --verbose --no-abbrev --contains | sed -rne 's/^[^\/]*\/([^\ ]+).*$/\1/p') =~ ^greenkeeper/.*$ ]]; then
