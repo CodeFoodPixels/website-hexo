@@ -31,7 +31,33 @@ It's also disrespectful to the audience, they don't care about your specific cod
 
 I feel this is another example of the asker stroking their own ego. Rather than ask a question, the "asker" makes a statement, usually trying to correct something the speaker said or giving their opinion. To me this is hugely disrespectful, especially considering the time and effort that the speaker has put in.
 
+### The question that's largely irrelevant to the talk
+
+This usually happens when someone focuses on a small aspect of the talk that wasn't really relevant to the central point. It may be of interest to the asker, but isn't related to what the speaker wanted people to take away from the talk or even something that the speaker has an opinion about.
+
+### The joke question
+
+While most people like a joke, unfortunately people aren't very original when it comes to thinking one up. Often when there's a joke question about a talk, the speaker has heard it multiple times already. To them the humour has likely worn off and become tedious, especially if it's something related to them and not the talk.
+
 ### A decent chunk of the audience probably doesn't care
-While there can still be good questions in a Q&A, it's still usually something that only a handful of your audience actually wants to know more about. The rest of your audience is becoming disengaged and just wants your event to progress.
+While there can still be good questions in a Q&A, it's still usually something that only a handful of your audience actually wants to know more about. The rest of your audience is becoming disengaged and just wants your event to progress. [The question that's largely irrelevant to the talk](#the-question-that's-largely-irrelevant-to-the-talk) also falls into this category.
+
+## Additional factors
+
+On top of the things I've seen happen before at LeedsJS, there are some things that I also see as areas where Q&A falls down or can be an issue. This stuff is either from my own experience as an organiser/speaker/attendee or what I've learned from others through discussions.
+
+### The speaker is put on the spot
+
+For some folks, being put on the spot to answer something that they've not been able to prepare for is anxiety-inducing and something that they want to avoid.
+
+You may argue "you're expected to know this stuff" but I disagree, talks aren't only for experts. They're for sharing experiences and ideas, for inspiring folks to try something and for encouraging people to learn too. It's fine to not know the answer to a question, but being asked to admit this on stage in front of an audience is likely something that people want to avoid.
+
+Similarly you may argue "you can't prepare for everything in life", but giving a talk is an already stressful situation that someone has spent a lot of time on preperation for. Adding a wildcard element into that is unnecessary extra stress.
+
+### Conversations are more meaningful
+
+In my experience the questions asked usually need some sort of back and forth to get an answer that both sides are happy with. This is really difficult to do when the speaker is on stage or at the front of the room and the asker is amongst a sea of faces.
+
+Having a conversation allows the speaker and asker to be on the same page and get an answer that they're both happy with. On top of this, the speaker can ask other people questions when in a conversation situation, meaning that everyone can learn something.
 
 
