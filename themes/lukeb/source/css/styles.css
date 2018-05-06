@@ -258,6 +258,14 @@ h4 {
     margin-bottom: 16px;
 }
 
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer a {
+    color: #ffffff;
+}
+
 .easter__overlay {
     position: fixed;
     top: 0px;
