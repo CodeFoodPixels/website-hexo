@@ -56,6 +56,12 @@ You may argue "you're expected to know this stuff" but I disagree, talks aren't 
 
 Similarly, you may argue "you can't prepare for everything in life", but giving a talk is an already stressful situation that someone has spent a lot of time on preparation for. Adding a wildcard element into that is unnecessary extra stress.
 
+### Asking questions can be daunting
+
+After publishing this post, [Nic on Twitter](https://twitter.com/NicolaClareFox/status/993107406879064064) mentioned that some folks don't like asking questions in front of a room full of people. This is an aspect that I'd forgotten to mention but one that I've experienced myself.
+
+Public speaking is one of the most common fears that people have and in this situation asking a question is public speaking. This means that many people won't want to ask a question, no matter how much they want to know the answer. It can also mean that people can leave the talk feeling frustrated and confused, which is the opposite of what a speaker wants.
+
 ### Conversations are more meaningful
 
 In my experience, the questions asked usually need some sort of back and forth to get an answer that both sides are happy with. This is really difficult to do when the speaker is on stage or at the front of the room and the asker is amongst a sea of faces.
