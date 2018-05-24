@@ -14,19 +14,19 @@
         return caches.open(`lukeb@${version}`)
             .then((cache) => {
                 cache.addAll([
-                    '/about/',
-                    '/projects/'
+                    '/js/easter.js',
+                    '/img/asteroid.png',
+                    '/about',
+                    '/projects'
                 ]);
 
                 return cache.addAll([
-                    '/js/easter.js',
                     '/css/styles.css',
                     '/css/pressstart2p-webfont.woff2',
-                    '/img/asteroid.png',
                     '/img/spaceship.png',
                     '/img/stars.png',
                     '/',
-                    '/offline/'
+                    '/offline'
                 ]);
             });
     };
@@ -59,7 +59,7 @@
             event.respondWith(
                 fetch(request)
                 .catch(() => {
-                    return caches.match('/offline/');
+                    return caches.match('/offline');
                 })
             );
             return;
@@ -91,7 +91,7 @@
                 .catch(() => {
                     return caches.match(request)
                         .then((response) => {
-                            return response || caches.match('/offline/');
+                            return response || caches.match('/offline');
                         })
                 })
             );
