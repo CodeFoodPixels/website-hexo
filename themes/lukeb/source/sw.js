@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = '1.0.0';
+    const version = '1.0.1';
 
     // Store core files in a cache (including a page to display when offline)
     function updateStaticCache() {
@@ -16,8 +16,8 @@
                 cache.addAll([
                     '/js/easter.js',
                     '/img/asteroid.png',
-                    '/about',
-                    '/projects'
+                    '/about/',
+                    '/projects/'
                 ]);
 
                 return cache.addAll([
@@ -26,7 +26,7 @@
                     '/img/spaceship.png',
                     '/img/stars.png',
                     '/',
-                    '/offline'
+                    '/offline/'
                 ]);
             });
     };
@@ -59,7 +59,7 @@
             event.respondWith(
                 fetch(request)
                 .catch(() => {
-                    return caches.match('/offline');
+                    return caches.match('/offline/');
                 })
             );
             return;
@@ -91,7 +91,7 @@
                 .catch(() => {
                     return caches.match(request)
                         .then((response) => {
-                            return response || caches.match('/offline');
+                            return response || caches.match('/offline/');
                         })
                 })
             );
