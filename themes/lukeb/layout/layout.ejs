@@ -58,6 +58,13 @@
                 </a>
             </p>
         </footer>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('/sw.js');
+                });
+            }
+        </script>
         <script async type="text/javascript" src="/js/easter.js"></script>
     </body>
 </html>
