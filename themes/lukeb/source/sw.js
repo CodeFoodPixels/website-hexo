@@ -21,6 +21,7 @@
                 return cache.addAll([
                     '/js/easter.js',
                     '/css/styles.css',
+                    '/css/pressstart2p-webfont.woff2',
                     '/img/asteroid.png',
                     '/img/spaceship.png',
                     '/img/stars.png',
