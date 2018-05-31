@@ -72,12 +72,12 @@ function loadGame() {
     spaceship.image.src = '/img/spaceship.png';
 
     var background = {
-        width: 200,
+        width: 400,
         height: 200,
         velocity: 3,
         image: new Image()
     }
-    background.image.src = '/img/stars.png';
+    background.image.src = '/img/stars.gif';
 
     var state;
 

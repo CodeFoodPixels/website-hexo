@@ -47,7 +47,7 @@ h4 {
 
 .header {
     height: 200px;
-    background: url('../img/stars.png');
+    background: url('../img/stars.gif');
     animation: 3s linear infinite stars;
     will-change: background-position-x;
     display: flex;

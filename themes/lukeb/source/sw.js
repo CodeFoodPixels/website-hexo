@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = '1.0.1';
+    const version = '1.0.2';
 
     // Store core files in a cache (including a page to display when offline)
     function updateStaticCache() {
@@ -24,7 +24,7 @@
                     '/css/styles.css',
                     '/css/pressstart2p-webfont.woff2',
                     '/img/spaceship.png',
-                    '/img/stars.png',
+                    '/img/stars.gif',
                     '/',
                     '/offline/'
                 ]);
