@@ -7,42 +7,76 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = '1.0.2';
+    const version = `1.1.0`;
+
+    const assetCache = `assets@${version}`;
+    const pageCache = `pages`;
+    const imageCache = `images`;
+    const caches = [
+        assetCache,
+        pageCache,
+        imageCache
+    ];
 
     // Store core files in a cache (including a page to display when offline)
-    function updateStaticCache() {
-        return caches.open(`lukeb@${version}`)
+    function updateAssetCache() {
+        return caches.open(assetCache)
             .then((cache) => {
                 cache.addAll([
-                    '/js/easter.js',
-                    '/img/asteroid.png',
-                    '/about/',
-                    '/projects/'
+                    `/js/easter.js`,
+                    `/img/asteroid.png`,
+                    `android-chrome-192x192.png`,
+                    `android-chrome-384x384.png`,
+                    `apple-touch-icon.png`,
+                    `browserconfig.xml`,
+                    `favicon-16x16.png`,
+                    `favicon-32x32.png`,
+                    `favicon.ico`,
+                    `mstile-150x150.png`,
+                    `safari-pinned-tab.svg`,
+                    `site.webmanifest`
                 ]);
 
                 return cache.addAll([
-                    '/css/styles.css',
-                    '/css/pressstart2p-webfont.woff2',
-                    '/img/spaceship.png',
-                    '/img/stars.gif',
-                    '/',
-                    '/offline/'
+                    `/css/styles.css`,
+                    `/css/pressstart2p-webfont.woff2`,
+                    `/img/spaceship.png`,
+                    `/img/stars.gif`,
                 ]);
             });
     };
 
-    self.addEventListener('install', (event) => {
-        event.waitUntil(updateStaticCache().then(() => self.skipWaiting()));
+    // Store core files in a cache (including a page to display when offline)
+    function updatePagesCache() {
+        return caches.open(pageCache)
+            .then((cache) => {
+                cache.addAll([
+                    `/about/`,
+                    `/projects/`
+                ]);
+
+                return cache.addAll([
+                    `/`,
+                    `/offline/`
+                ]);
+            });
+    };
+
+    self.addEventListener(`install`, (event) => {
+        event.waitUntil(Promise.all([
+            updateAssetCache(),
+            updatePagesCache()
+        ]).then(() => self.skipWaiting()));
     });
 
-    self.addEventListener('activate', (event) => {
+    self.addEventListener(`activate`, (event) => {
         event.waitUntil(
             caches.keys()
             .then((keys) => {
                 // Remove caches whose name is no longer valid
                 return Promise.all(keys
                     .filter((key) => {
-                        return key.indexOf(`@${version}`) === -1;
+                        return !caches.includes(key);
                     })
                     .map((key) => {
                         return caches.delete(key);
@@ -52,25 +86,25 @@
         );
     });
 
-    self.addEventListener('fetch', (event) => {
+    self.addEventListener(`fetch`, (event) => {
         const request = event.request;
         // Always fetch non-GET requests from the network
-        if (request.method !== 'GET') {
+        if (request.method !== `GET`) {
             event.respondWith(
                 fetch(request)
                 .catch(() => {
-                    return caches.match('/offline/');
+                    return caches.match(`/offline/`);
                 })
             );
             return;
         }
 
         // For HTML requests, try the network first, fall back to the cache, finally the offline page
-        if (request.headers.get('Accept').indexOf('text/html') !== -1) {
+        if (request.headers.get(`Accept`).indexOf(`text/html`) !== -1) {
             // Fix for Chrome bug: https://code.google.com/p/chromium/issues/detail?id=573937
-            if (request.mode != 'navigate') {
+            if (request.mode != `navigate`) {
                 request = new Request(request.url, {
-                    method: 'GET',
+                    method: `GET`,
                     headers: request.headers,
                     mode: request.mode,
                     credentials: request.credentials,
@@ -82,7 +116,7 @@
                 .then((response) => {
                     // Stash a copy of this page in the cache
                     const copy = response.clone();
-                    caches.open(`lukeb@${version}`)
+                    caches.open(pageCache)
                         .then((cache) => {
                             cache.put(request, copy);
                         });
@@ -91,7 +125,7 @@
                 .catch(() => {
                     return caches.match(request)
                         .then((response) => {
-                            return response || caches.match('/offline/');
+                            return response || caches.match(`/offline/`);
                         })
                 })
             );
@@ -104,18 +138,20 @@
             .then((response) => {
                 return response || fetch(request).then((response) => {
                         // Stash a copy of this page in the cache
-                        const copy = response.clone();
-                        caches.open(`lukeb@${version}`)
-                            .then((cache) => {
-                                cache.put(request, copy);
-                            });
+                        if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
+                            const copy = response.clone();
+                            caches.open(imageCache)
+                                .then((cache) => {
+                                    cache.put(request, copy);
+                                });
+                        }
                         return response;
                     }).catch(() => {
                         // If the request is for an image, show an offline placeholder
                         if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
-                            return new Response('<svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">offline</tspan></text></g></svg>', {
+                            return new Response(`<svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">offline</tspan></text></g></svg>`, {
                                 headers: {
-                                    'Content-Type': 'image/svg+xml'
+                                    'Content-Type': `image/svg+xml`
                                 }
                             });
                         }
