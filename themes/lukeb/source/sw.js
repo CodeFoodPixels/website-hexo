@@ -12,7 +12,7 @@
     const assetCache = `assets@${version}`;
     const pageCache = `pages`;
     const imageCache = `images`;
-    const caches = [
+    const cacheList = [
         assetCache,
         pageCache,
         imageCache
@@ -76,7 +76,7 @@
                 // Remove caches whose name is no longer valid
                 return Promise.all(keys
                     .filter((key) => {
-                        return !caches.includes(key);
+                        return !cacheList.includes(key);
                     })
                     .map((key) => {
                         return caches.delete(key);
