@@ -26,9 +26,9 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - JSConf Budapest 2017: October 2017 - [Video](https://www.youtube.com/watch?v=dAqKa3waNx8)
 - GDG Devfest Coimbra: December 2017
 - Tech Nottingham: May 2018
+- Fusion Meetup: June 2018
 
 #### Upcoming
-- Fusion Meetup: June 2018 - [Website](https://www.eventbrite.com/e/fusion-meetup-birmingham-june-2018-tickets-42236434312)
 - Fullstack: July 2018 - [Website](https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things)
 - ScotlandJS: July 2018 - [Website](http://scotlandjs.com)
 
