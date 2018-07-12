@@ -1,6 +1,8 @@
 {
     "name": "Luke Bonaccorsi",
-    "short_name": "Luke Bonaccorsi",
+    "short_name": "LukeB.co.uk",
+    "display": "minimal-ui",
+    "start_url": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,6 +15,6 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff"
+    "theme_color": "#000000",
+    "background_color": "#000000"
 }
