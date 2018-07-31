@@ -87,3 +87,9 @@ feed:
   content:
   content_limit: 140
   content_limit_delim: ' '
+
+nofollow:
+  enable: true
+  include:
+    noreferrer: true
+    noopener: true
