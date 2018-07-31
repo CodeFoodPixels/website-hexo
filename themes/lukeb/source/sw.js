@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = `1.1.0`;
+    const version = `1.1.1`;
 
     const assetCache = `assets@${version}`;
     const pageCache = `pages`;
@@ -27,6 +27,7 @@
                     `/img/asteroid.png`,
                     `android-chrome-192x192.png`,
                     `android-chrome-384x384.png`,
+                    `android-chrome-512x512.png`,
                     `apple-touch-icon.png`,
                     `browserconfig.xml`,
                     `favicon-16x16.png`,
