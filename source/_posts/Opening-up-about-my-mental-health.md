@@ -40,5 +40,4 @@ I'm still unsure how much it'll actually help me, but I'm trying to be open mind
 
 Finally, I'm really thankful to everyone who's been supportive and helpful so far. Being comfortable and able to talk about a difficult topic like mental health with someone helps a lot and I'm incredibly lucky that I have friends, co-workers and an excellent manager that I've been able to talk about it with.
 
-
-
+*Thanks to [Beth North](https://bethnorth.wordpress.com/) for reading through this before I posted it*
