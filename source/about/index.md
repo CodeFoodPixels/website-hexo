@@ -27,10 +27,11 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - GDG Devfest Coimbra: December 2017
 - Tech Nottingham: May 2018
 - Fusion Meetup: June 2018
+- Fullstack: July 2018 - [Video (free account required)](https://skillsmatter.com/skillscasts/11714-how-i-ended-up-automating-my-curtains-and-shouting-at-my-laptop)
+- ScotlandJS: July 2018
 
 #### Upcoming
-- Fullstack: July 2018 - [Website](https://skillsmatter.com/conferences/9815-fullstack-2018-the-conference-on-javascript-node-and-internet-of-things)
-- ScotlandJS: July 2018 - [Website](http://scotlandjs.com)
+- Nodeconf Argentina: October 2018 - [Website](https://2018.nodeconf.com.ar/)
 
 ### Testing With Snapshots
 
