@@ -41,4 +41,4 @@ If you feel like this is the right approach for your group, then I have a templa
 Currently this form only asks for the entrant's name, but after a discussion with my friend and former co-organiser [Chris Manson](https://twitter.com/real_ate) I may update the one for LeedsJS to ask for some feedback about the event/group too.
 
 ## Please let me know how it goes!
-If you try any of this out with your group or have other ideas/suggestions to add to this post, please [tweet or DM me](https://twitter.com/LukeB_UK/). I'd be very interested to hear how it goes and any tweaks or changes you've made to make it work for your group!
+If you try any of this out with your group or have other ideas/suggestions to add to this post, please [tweet or DM me](https://twitter.com/CodeFoodPixels/). I'd be very interested to hear how it goes and any tweaks or changes you've made to make it work for your group!

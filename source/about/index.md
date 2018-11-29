@@ -29,16 +29,23 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - Fusion Meetup: June 2018
 - Fullstack: July 2018 - [Video (free account required)](https://skillsmatter.com/skillscasts/11714-how-i-ended-up-automating-my-curtains-and-shouting-at-my-laptop)
 - ScotlandJS: July 2018
+- Nodeconf Argentina: October 2018
+- JSConf Colombia: November 2018
 
 #### Upcoming
-- Nodeconf Argentina: October 2018 - [Website](https://2018.nodeconf.com.ar/)
+- FrontendNE: December 2018 - [Website](https://frontendne.co.uk/events/2018-12-06)
 
 ### Testing With Snapshots
-
 - Leeds Testing Atelier V: October 2017 - [Video](https://www.youtube.com/watch?v=uzfydKkSAuc)
+- LeedsJS: August 2018
 
 ### Painting Pixels With Web Bluetooth
+#### Past
 - LeedsJS: May 2018
 
+#### Upcoming
+- FrontendNE: December 2018 - [Website](https://frontendne.co.uk/events/2018-12-06)
+
+
 ## Contact
-The best way to get in touch with me is through [Twitter](https://twitter.com/LukeB_UK). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk). As nice as the interest is, please do not contact me with recruitment material.
+The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk). As nice as the interest is, please do not contact me with recruitment material.
