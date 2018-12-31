@@ -12,6 +12,7 @@
         <meta charset="UTF-8">
         <%- open_graph({
             twitter_id: '@CodeFoodPixels',
+            twitter_card: 'summary_large_image',
             image: (page.content && firstcontentimage(page.content)) || '/icon-512x512.png',
             description: page.excerpt ||
                 (page.content && truncate(page.content, {length: 200, omission: '...'})) ||
