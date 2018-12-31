@@ -12,7 +12,12 @@
         <meta charset="UTF-8">
         <%- open_graph({
             twitter_id: '@CodeFoodPixels',
-            image: '/icon-512x512.png'
+            twitter_card: 'summary_large_image',
+            image: (page.content && firstcontentimage(page.content)) || '/icon-512x512.png',
+            description: page.excerpt ||
+                (page.content && truncate(page.content, {length: 200, omission: '...'})) ||
+                'Hi, I’m Luke. I’m a 28 year old self-taught web developer/software engineer currently living near Leeds, UK and working for Sky Betting & Gaming.'
+
         }) %>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
