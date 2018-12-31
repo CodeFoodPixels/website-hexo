@@ -31,9 +31,7 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - ScotlandJS: July 2018
 - Nodeconf Argentina: October 2018
 - JSConf Colombia: November 2018
-
-#### Upcoming
-- FrontendNE: December 2018 - [Website](https://frontendne.co.uk/events/2018-12-06)
+- FrontendNE: December 2018
 
 ### Testing With Snapshots
 - Leeds Testing Atelier V: October 2017 - [Video](https://www.youtube.com/watch?v=uzfydKkSAuc)
@@ -42,10 +40,7 @@ I have spoken at a number of events and conferences. If you think I may be inter
 ### Painting Pixels With Web Bluetooth
 #### Past
 - LeedsJS: May 2018
-
-#### Upcoming
-- FrontendNE: December 2018 - [Website](https://frontendne.co.uk/events/2018-12-06)
-
+- FrontendNE: December 2018
 
 ## Contact
 The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk). As nice as the interest is, please do not contact me with recruitment material.
