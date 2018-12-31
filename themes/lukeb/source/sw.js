@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = `1.1.1`;
+    const version = `1.1.2`;
 
     const assetCache = `assets@${version}`;
     const pageCache = `pages`;
@@ -25,9 +25,9 @@
                 cache.addAll([
                     `/js/easter.js`,
                     `/img/asteroid.png`,
-                    `android-chrome-192x192.png`,
-                    `android-chrome-384x384.png`,
-                    `android-chrome-512x512.png`,
+                    `icon-192x192.png`,
+                    `icon-384x384.png`,
+                    `icon-512x512.png`,
                     `apple-touch-icon.png`,
                     `browserconfig.xml`,
                     `favicon-16x16.png`,
