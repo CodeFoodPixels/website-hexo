@@ -1,6 +1,5 @@
 .header {
-    animation: 3s linear infinite stars;
-    will-change: background-position-x;
+    background: url('../img/stars-animated.gif');
 }
 
 .header__spaceship-image {

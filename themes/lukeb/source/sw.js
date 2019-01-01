@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = `1.1.2`;
+    const version = `1.1.3`;
 
     const assetCache = `assets@${version}`;
     const pageCache = `pages`;
@@ -43,6 +43,7 @@
                     `/css/pressstart2p-webfont.woff2`,
                     `/img/spaceship.png`,
                     `/img/stars.gif`,
+                    `/img/stars-animated.gif`,
                 ]);
             });
     };
