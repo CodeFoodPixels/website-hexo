@@ -176,7 +176,9 @@ h4 {
     margin-bottom: 16px;
 }
 
-
+.content__meta {
+    margin-bottom: 16px;
+}
 
 @media screen and (min-width: 650px) {
     .header {
