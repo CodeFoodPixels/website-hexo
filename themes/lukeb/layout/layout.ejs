@@ -7,7 +7,10 @@
             <% } %>
             Luke Bonaccorsi
         </title>
-        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/css/critical.css" critical="true" />
+        <noscript>
+            <link rel="stylesheet" href="/css/styles.css" />
+        </noscript>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <%- open_graph({
@@ -17,8 +20,8 @@
             description: page.excerpt ||
                 (page.content && truncate(page.content, {length: 200, omission: '...'})) ||
                 'Hi, I’m Luke. I’m a 28 year old self-taught web developer/software engineer currently living near Leeds, UK and working for Sky Betting & Gaming.'
-
         }) %>
+        <link rel="preload" href="css/pressstart2p-webfont.woff2" as="font" type="font/woff2">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -73,6 +76,14 @@
                 });
             }
         </script>
-        <script async type="text/javascript" src="/js/easter.js"></script>
+        <script>
+            window.requestAnimationFrame(() => {
+                const deferredStyles = document.createElement('link');
+                deferredStyles.rel = 'stylesheet';
+                deferredStyles.href = '/css/styles.css';
+                document.querySelector('head').appendChild(deferredStyles);
+            });
+        </script>
+        <script defer type="text/javascript" src="/js/easter.js"></script>
     </body>
 </html>
