@@ -63,16 +63,6 @@
     content: "-";
 }
 
-.content__article {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-.content__header {
-    border-bottom: 1px dashed #000000;
-    margin-bottom: 16px;
-}
-
 .content code {
     background-color: #eeeeee;
     border: 1px solid #cccccc;
@@ -97,11 +87,6 @@
 .content__pagination .next,
 .content__pagination .prev {
     margin: 0 4px;
-}
-
-.content p {
-    margin-bottom: 16px;
-    line-height: 20px;
 }
 
 .footer {

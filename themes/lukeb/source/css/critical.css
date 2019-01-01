@@ -166,6 +166,18 @@ h4 {
     margin-bottom: 32px;
 }
 
+.content__article {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.content__header {
+    border-bottom: 1px dashed #000000;
+    margin-bottom: 16px;
+}
+
+
+
 @media screen and (min-width: 650px) {
     .header {
         flex-direction: row;
