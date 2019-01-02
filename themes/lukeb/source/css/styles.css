@@ -166,16 +166,6 @@
     }
 }
 
-@keyframes stars {
-    from {
-        background-position-x: 0px;
-    }
-
-    to {
-        background-position-x: -400px;
-    }
-}
-
 @keyframes blink {
     from {
         color: rgba(255, 255, 255, 1);
