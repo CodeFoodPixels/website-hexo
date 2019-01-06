@@ -78,12 +78,14 @@
             }
         </script>
         <script>
-            window.requestAnimationFrame(() => {
-                const addStylesNode = document.getElementById('deferred-styles');
-                const replacement = document.createElement('div');
-                replacement.innerHTML = addStylesNode.textContent;
-                document.body.appendChild(replacement)
-                addStylesNode.parentElement.removeChild(addStylesNode);
+            window.addEventListener('load', () => {
+                window.requestAnimationFrame(() => {
+                    const addStylesNode = document.getElementById('deferred-styles');
+                    const replacement = document.createElement('div');
+                    replacement.innerHTML = addStylesNode.textContent;
+                    document.body.appendChild(replacement)
+                    addStylesNode.parentElement.removeChild(addStylesNode);
+                });
             });
         </script>
         <script defer type="text/javascript" src="/js/easter.js"></script>
