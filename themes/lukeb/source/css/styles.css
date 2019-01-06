@@ -1,17 +1,16 @@
-.header {
-    background: url('../img/stars-animated.gif');
+.header__background {
+    animation: 3s linear infinite stars;
 }
 
 .header__spaceship-image {
     animation: 1s ease-in-out alternate infinite spaceship;
-    will-change: transform;
 }
 
 .easter {
     overflow: hidden;
 }
 
-.easter .header {
+.easter .header__background {
     animation: none;
 }
 
@@ -21,7 +20,6 @@
 
 .header__start {
     animation: 1.5s linear alternate infinite blink;
-    will-change: color;
 }
 
 .easter .header__start {
@@ -148,11 +146,21 @@
     }
 }
 
-@media screen and (min-width: 1212px) {
+@media screen and (min-width: 1229px) {
 
     .nav:before,
     .nav:after {
         display: block;
+    }
+}
+
+@keyframes stars {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(-400px);
     }
 }
 
