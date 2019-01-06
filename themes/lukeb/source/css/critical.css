@@ -43,11 +43,23 @@ h4 {
 
 .header {
     height: 200px;
-    background: url('../img/stars.gif');
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header__background {
+    position: absolute;
+    width: calc(100% + 400px);
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: url('../img/stars.gif');
+    will-change: transform;
+    z-index: -1;
 }
 
 .header__spaceship {
@@ -58,6 +70,7 @@ h4 {
 
 .header__spaceship-image {
     height: 68px;
+    will-change: transform;
 }
 
 .header__text {
@@ -85,6 +98,7 @@ h4 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    will-change: color;
 }
 
 .nav {
@@ -277,7 +291,7 @@ h4 {
     }
 }
 
-@media screen and (min-width: 1212px) {
+@media screen and (min-width: 1229px) {
     .nav__content {
         width: 1172px;
         flex: none;

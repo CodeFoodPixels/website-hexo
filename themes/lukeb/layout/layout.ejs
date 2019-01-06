@@ -8,7 +8,7 @@
             Luke Bonaccorsi
         </title>
         <link rel="stylesheet" href="/css/critical.css" critical="true" />
-        <noscript>
+        <noscript id="deferred-styles">
             <link rel="stylesheet" href="/css/styles.css" />
         </noscript>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,6 +36,7 @@
 
     <body>
         <header class="header">
+            <div class="header__background"></div>
             <div class="header__spaceship">
                 <a href="<%- url_for() %>">
                     <img src="/img/spaceship.png" alt="spaceship, spaceship, SPACESHIP!" class="header__spaceship-image" />
@@ -77,11 +78,14 @@
             }
         </script>
         <script>
-            window.requestAnimationFrame(() => {
-                const deferredStyles = document.createElement('link');
-                deferredStyles.rel = 'stylesheet';
-                deferredStyles.href = '/css/styles.css';
-                document.querySelector('head').appendChild(deferredStyles);
+            window.addEventListener('load', () => {
+                window.requestAnimationFrame(() => {
+                    const addStylesNode = document.getElementById('deferred-styles');
+                    const replacement = document.createElement('div');
+                    replacement.innerHTML = addStylesNode.textContent;
+                    document.body.appendChild(replacement)
+                    addStylesNode.parentElement.removeChild(addStylesNode);
+                });
             });
         </script>
         <script defer type="text/javascript" src="/js/easter.js"></script>
