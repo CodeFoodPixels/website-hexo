@@ -93,3 +93,27 @@ nofollow:
   include:
     noreferrer: true
     noopener: true
+
+all_minifier: true
+
+image_minifier:
+  enable: false
+
+js_minifier:
+  enable: true
+  mangle: false
+  silent: true
+
+css_minifier:
+  enable: true
+  silent: true
+
+html_minifier:
+  enable: true
+  removeComments: true
+  collapseWhitespace: true
+  collapseBooleanAttributes: true
+  removeEmptyAttributes: true
+  minifyJS: true
+  minifyCSS: true
+  silent: true
