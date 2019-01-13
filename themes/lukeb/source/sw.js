@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = `1.1.4`;
+    const version = `1.1.5`;
 
     const assetCache = `assets@${version}`;
     const pageCache = `pages`;
@@ -20,29 +20,36 @@
 
     // Store core files in a cache (including a page to display when offline)
     function updateAssetCache() {
-        return caches.open(assetCache)
-            .then((cache) => {
-                cache.addAll([
-                    `/js/easter.js`,
-                    `/img/asteroid.png`,
-                    `icon-192x192.png`,
-                    `icon-384x384.png`,
-                    `icon-512x512.png`,
-                    `apple-touch-icon.png`,
-                    `browserconfig.xml`,
-                    `favicon-16x16.png`,
-                    `favicon-32x32.png`,
-                    `favicon.ico`,
-                    `mstile-150x150.png`,
-                    `safari-pinned-tab.svg`,
-                    `site.webmanifest`
-                ]);
+        return Promise.all([
+            caches.open(assetCache),
+            caches.open(imageCache)
+        ]).then(([assets, images]) => {
+                setTimeout(() => {
+                     assets.addAll([
+                         `/js/easter.js`,
+                         `browserconfig.xml`,
+                         `site.webmanifest`
+                     ]);
 
-                return cache.addAll([
+                     images.addAll([
+                         `/img/spaceship.png`,
+                         `/img/stars.gif`,
+                         `/img/asteroid.png`,
+                         `icon-192x192.png`,
+                         `icon-384x384.png`,
+                         `icon-512x512.png`,
+                         `apple-touch-icon.png`,
+                         `favicon-16x16.png`,
+                         `favicon-32x32.png`,
+                         `favicon.ico`,
+                         `mstile-150x150.png`,
+                         `safari-pinned-tab.svg`,
+                     ]);
+                }, 1000);
+
+                return assets.addAll([
                     `/css/styles.css`,
                     `/css/pressstart2p-webfont.woff2`,
-                    `/img/spaceship.png`,
-                    `/img/stars.gif`,
                 ]);
             });
     };
