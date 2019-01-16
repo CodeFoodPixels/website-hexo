@@ -101,6 +101,22 @@ h4 {
     will-change: color;
 }
 
+.header__start:before,
+.header__start:after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: #ffffff;
+}
+
+.header__start:before {
+    margin-right: 8px;
+}
+
+.header__start:after {
+    margin-left: 8px;
+}
+
 .nav {
     font-family: 'press_start_2pregular', monospace;
     display: flex;
@@ -275,6 +291,17 @@ h4 {
         width: 992px;
         flex: none;
     }
+
+     .nav:before,
+     .nav:after {
+         content: '';
+         flex: 1;
+         height: 32px;
+         background: #bb1b1b;
+         margin: 4px;
+         border: 4px solid #D53535;
+         border-style: outset;
+     }
 }
 
 @media screen and (min-width: 1172px) {
@@ -294,12 +321,22 @@ h4 {
         width: auto;
         flex: 1;
     }
+
+     .nav:before,
+     .nav:after {
+         display: none;
+     }
 }
 
 @media screen and (min-width: 1229px) {
     .nav__content {
         width: 1172px;
         flex: none;
+    }
+
+    .nav:before,
+    .nav:after {
+        display: block;
     }
 }
 

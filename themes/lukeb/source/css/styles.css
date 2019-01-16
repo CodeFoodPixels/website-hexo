@@ -26,22 +26,6 @@
     animation: none;
 }
 
-.header__start:before,
-.header__start:after {
-    content: '';
-    flex: 1;
-    height: 2px;
-    background: #ffffff;
-}
-
-.header__start:before {
-    margin-right: 8px;
-}
-
-.header__start:after {
-    margin-left: 8px;
-}
-
 .nav__toggle:after {
     content: "+";
     position: absolute;
@@ -123,35 +107,6 @@
     top: 50%;
     margin-top: -160px;
     left: 50%;
-}
-
-@media screen and (min-width: 1032px) {
-
-    .nav:before,
-    .nav:after {
-        content: '';
-        flex: 1;
-        height: 32px;
-        background: #bb1b1b;
-        margin: 4px;
-        border: 4px solid #D53535;
-        border-style: outset;
-    }
-}
-
-@media screen and (min-width: 1172px) {
-    .nav:before,
-    .nav:after {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1229px) {
-
-    .nav:before,
-    .nav:after {
-        display: block;
-    }
 }
 
 @keyframes stars {
