@@ -57,7 +57,7 @@ h4 {
     height: 100%;
     top: 0px;
     left: 0px;
-    background: url('../img/stars.gif');
+    background: url('/img/stars.gif');
     will-change: transform;
     z-index: -1;
 }
@@ -99,6 +99,22 @@ h4 {
     justify-content: center;
     cursor: pointer;
     will-change: color;
+}
+
+.header__start:before,
+.header__start:after {
+    content: '';
+    flex: 1;
+    height: 2px;
+    background: #ffffff;
+}
+
+.header__start:before {
+    margin-right: 8px;
+}
+
+.header__start:after {
+    margin-left: 8px;
 }
 
 .nav {
@@ -194,6 +210,11 @@ h4 {
     margin-bottom: 16px;
 }
 
+.content p {
+    margin-bottom: 16px;
+    line-height: 20px;
+}
+
 @media screen and (min-width: 650px) {
     .header {
         flex-direction: row;
@@ -270,6 +291,17 @@ h4 {
         width: 992px;
         flex: none;
     }
+
+     .nav:before,
+     .nav:after {
+         content: '';
+         flex: 1;
+         height: 32px;
+         background: #bb1b1b;
+         margin: 4px;
+         border: 4px solid #D53535;
+         border-style: outset;
+     }
 }
 
 @media screen and (min-width: 1172px) {
@@ -289,12 +321,22 @@ h4 {
         width: auto;
         flex: 1;
     }
+
+     .nav:before,
+     .nav:after {
+         display: none;
+     }
 }
 
 @media screen and (min-width: 1229px) {
     .nav__content {
         width: 1172px;
         flex: none;
+    }
+
+    .nav:before,
+    .nav:after {
+        display: block;
     }
 }
 
