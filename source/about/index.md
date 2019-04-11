@@ -43,4 +43,6 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - FrontendNE: December 2018
 
 ## Contact
-The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk). As nice as the interest is, please do not contact me with recruitment material.
+The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk).
+
+If you're looking to contact me about job opportunities, please note that I'm currently only looking for developer relations roles.
