@@ -4,7 +4,7 @@ date: 2017-11-11 22:27:50
 ---
 ![Me speaking at JSConf Budapest](/img/luke-bonaccorsi.jpg)
 
-Hi, I'm Luke. I'm a 28 year old self-taught web developer/software engineer currently living near Leeds, UK and working for [Sky Betting & Gaming](https://www.skybetcareers.com/).
+Hi, I'm Luke. I'm a 29 year old self-taught web developer/software engineer currently living near Leeds, UK and working for [Sky Betting & Gaming](https://www.skybetcareers.com/).
 
 My expertise mainly lies in HTML, CSS and JavaScript, including a myriad of frameworks for these technologies. On my personal projects I tend to use JavaScript on [Node.js](https://nodejs.org), but I've also started experimenting with hardware using [Mongoose OS](https://mongoose-os.com/).
 
