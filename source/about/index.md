@@ -45,6 +45,10 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - Leeds Frontend: July 2019
 - Front-End-York: October 2019
 
+### Coding is serious business
+- LeedsJS: February 2019
+- JSNE: May 2019
+
 ## Contact
 The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk).
 
