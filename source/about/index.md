@@ -32,6 +32,7 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - Nodeconf Argentina: October 2018
 - JSConf Colombia: November 2018
 - FrontendNE: December 2018
+- NEJS Conf: August 2019
 
 ### Testing With Snapshots
 - Leeds Testing Atelier V: October 2017 - [Video](https://www.youtube.com/watch?v=uzfydKkSAuc)
@@ -41,6 +42,12 @@ I have spoken at a number of events and conferences. If you think I may be inter
 #### Past
 - LeedsJS: May 2018
 - FrontendNE: December 2018
+- Leeds Frontend: July 2019
+- Front-End-York: October 2019
+
+### Coding is serious business
+- LeedsJS: February 2019
+- JSNE: May 2019
 
 ## Contact
 The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk).
