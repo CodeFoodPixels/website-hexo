@@ -7,7 +7,7 @@
 (function () {
 
     // Update 'version' if you need to refresh the cache
-    const version = `1.1.5`;
+    const version = `1.1.6`;
 
     const assetCache = `assets@${version}`;
     const pageCache = `pages`;
@@ -140,31 +140,36 @@
             return;
         }
 
+        const currentDomain = (new URL(self.location)).hostname;
+        const requestDomain = (new URL(request.url)).hostname;
+
         // For non-HTML requests, look in the cache first, fall back to the network
-        event.respondWith(
-            caches.match(request)
-            .then((response) => {
-                return response || fetch(request).then((response) => {
-                        // Stash a copy of this page in the cache
-                        if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
-                            const copy = response.clone();
-                            caches.open(imageCache)
-                                .then((cache) => {
-                                    cache.put(request, copy);
+        if (currentDomain === requestDomain) {
+            event.respondWith(
+                caches.match(request)
+                .then((response) => {
+                    return response || fetch(request).then((response) => {
+                            // Stash a copy of this page in the cache
+                            if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
+                                const copy = response.clone();
+                                caches.open(imageCache)
+                                    .then((cache) => {
+                                        cache.put(request, copy);
+                                    });
+                            }
+                            return response;
+                        }).catch(() => {
+                            // If the request is for an image, show an offline placeholder
+                            if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
+                                return new Response(`<svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">offline</tspan></text></g></svg>`, {
+                                    headers: {
+                                        'Content-Type': `image/svg+xml`
+                                    }
                                 });
-                        }
-                        return response;
-                    }).catch(() => {
-                        // If the request is for an image, show an offline placeholder
-                        if (request.url.match(/\.(jpe?g|png|gif|svg)$/)) {
-                            return new Response(`<svg width="400" height="300" role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">offline</tspan></text></g></svg>`, {
-                                headers: {
-                                    'Content-Type': `image/svg+xml`
-                                }
-                            });
-                        }
-                    });
-            })
-        );
+                            }
+                        });
+                })
+            );
+        }
     });
 })();
