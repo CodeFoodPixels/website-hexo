@@ -1,6 +1,6 @@
 ---
 title: Your Event Probably Shouldn't Be In A Pub
-date: 2019-05-16 10:00:00
+date: 2019-05-15 10:00:00
 tags:
  - community
  - meetups
