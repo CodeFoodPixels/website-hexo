@@ -59,7 +59,7 @@ With this in mind, I set about building the software with MQTT as the communicat
 
 ![A webapp for controlling the jumper lights](webapp.png)
 
-I'm not going to go super in-depth on the web app, but I used plain JavaScript, HTML and CSS to build a form for the various ways to control the lights. With the fade and flash options, the user has the choice of controlling how long the lights stay on and off for.
+I'm not going to go super in-depth on the web app, but I used plain JavaScript, HTML and CSS to build a form for the various ways to control the lights. With the fade and flash options, the user has the choice of controlling how long the lights stay on and off for. As I use MQTT, I don't need any server-side code for this app which means that I can deploy it as a static site on [Netlify](https://www.netlify.com/).
 
 ## The final product
 
