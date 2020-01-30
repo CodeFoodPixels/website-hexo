@@ -32,7 +32,7 @@
     right: 8px;
 }
 
-.nav__toggle-checkbox:checked~.nav__item {
+.nav__toggle-checkbox:checked~.nav__item:not(.nav__toggle) {
     display: block;
 }
 
