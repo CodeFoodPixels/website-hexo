@@ -19,10 +19,10 @@
     "hexo-generator-feed": "^1.2.2",
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-renderer-ejs": "^0.3.0",
+    "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-handlebars": "^2.0.2",
-    "hexo-renderer-marked": "^1.0.0",
+    "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.0.0",
-    "hexo-server": "^0.3.0"
+    "hexo-server": "^1.0.0"
   }
 }

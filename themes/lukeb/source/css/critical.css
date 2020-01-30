@@ -11,7 +11,7 @@ body {
     background: #000000;
     margin: 0;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
 }
@@ -26,19 +26,19 @@ p {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
 h3 {
-    font-size: 1.125em;
+    font-size: 1.4em;
 }
 
 h4 {
-    font-size: 13px;
+    font-size: 1.2;
 }
 
 .header {
@@ -95,6 +95,7 @@ h4 {
 
 .header__start {
     display: flex;
+    font-size: 0.9em;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -247,7 +248,7 @@ h4 {
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 730px) {
     .nav__item {
         flex: 1;
         display: block;
