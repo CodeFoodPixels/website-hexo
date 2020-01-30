@@ -4,7 +4,7 @@ date: 2017-11-11 22:27:50
 ---
 ![Me speaking at JSConf Budapest](/img/luke-bonaccorsi.jpg)
 
-Hi, I'm Luke. I'm a 28 year old self-taught web developer/software engineer currently living near Leeds, UK and working for [Sky Betting & Gaming](https://www.skybetcareers.com/).
+Hi, I'm Luke. I'm a 29 year old self-taught web developer/software engineer currently living near Leeds, UK and working for [Sky Betting & Gaming](https://www.skybetcareers.com/).
 
 My expertise mainly lies in HTML, CSS and JavaScript, including a myriad of frameworks for these technologies. On my personal projects I tend to use JavaScript on [Node.js](https://nodejs.org), but I've also started experimenting with hardware using [Mongoose OS](https://mongoose-os.com/).
 
@@ -32,6 +32,7 @@ I have spoken at a number of events and conferences. If you think I may be inter
 - Nodeconf Argentina: October 2018
 - JSConf Colombia: November 2018
 - FrontendNE: December 2018
+- NEJS Conf: August 2019
 
 ### Testing With Snapshots
 - Leeds Testing Atelier V: October 2017 - [Video](https://www.youtube.com/watch?v=uzfydKkSAuc)
@@ -41,6 +42,12 @@ I have spoken at a number of events and conferences. If you think I may be inter
 #### Past
 - LeedsJS: May 2018
 - FrontendNE: December 2018
+- Leeds Frontend: July 2019
+- Front-End-York: October 2019
+
+### Coding is serious business
+- LeedsJS: February 2019
+- JSNE: May 2019
 
 ## Contact
 The best way to get in touch with me is through [Twitter](https://twitter.com/CodeFoodPixels). If you're not on Twitter, or want a little more privacy, please [email me](mailto:luke@lukeb.co.uk).
