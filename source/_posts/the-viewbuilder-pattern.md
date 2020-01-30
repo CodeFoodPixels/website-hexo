@@ -1,6 +1,6 @@
 ---
 title: The Viewbuilder Pattern
-date: 2020-01-27 10:00:00
+date: 2020-01-31 10:00:00
 tags:
   - programming
   - patterns
@@ -14,7 +14,9 @@ While I was working at Sky Betting and Gaming, I was introduced to a pattern tha
 
 ## What is a viewbuilder?
 
-At it's basis, a viewbuilder is a process that runs a task on a set interval (usually once per second) to gather, manipulate and store data for later use.
+At it's most simple, a viewbuilder is a process that runs a task on a set interval to gather, manipulate and store data for later use.
+
+The interval you set can depend how often the data will update and how fresh you want it to be. Most of our instances ran at a 1 second interval, but some ran at other intervals such as 5 and 10 seconds.
 
 ## Why use a viewbuilder?
 
