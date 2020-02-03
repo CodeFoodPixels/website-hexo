@@ -24,6 +24,8 @@ While you could gather and return this data as and when it is requested by the f
 
 By using a viewbuilder we only gather this data once within a set interval, reducing the load on any APIs used and reducing the work done during the call from the frontend.
 
+This may sound just like caching, but there are 2 key differences. The first is that caching is usually done on the first request. In cases of heavy traffic sites, this can result in a cache stampede and potentially bringing your site down. The second difference is that this is a transformed cache, so there is no extra processing necessary when making the request.
+
 The downside of the viewbuilder approach is that the data is only as fresh as the frequency of the viewbuilder. This may be a problem for some use cases, but it was acceptable for us.
 
 ## Anatomy of a viewbuilder
