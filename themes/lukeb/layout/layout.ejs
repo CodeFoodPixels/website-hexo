@@ -7,6 +7,11 @@
             <% } %>
             Luke Bonaccorsi
         </title>
+        <link rel="preload" href="/css/pressstart2p-webfont.woff2" as="font" type="font/woff2">
+        <link rel="stylesheet" href="/css/critical.css" critical="true" />
+        <noscript id="deferred-styles">
+            <link rel="stylesheet" href="/css/styles.css" />
+        </noscript>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <%- open_graph({
@@ -73,7 +78,21 @@
                 });
             }
         </script>
-       
+        <script>
+            function loadStyles() {
+                var addStylesNode = document.getElementById('deferred-styles');
+                var replacement = document.createElement('div');
+                replacement.innerHTML = addStylesNode.textContent;
+                document.body.appendChild(replacement)
+                addStylesNode.parentElement.removeChild(addStylesNode);
+            }
+
+            function onload() {
+                window.requestAnimationFrame(loadStyles);
+            }
+
+            window.addEventListener('load', onload);
+        </script>
         <script defer type="text/javascript" src="/js/easter.js"></script>
         <img src="https://lukeb-emptyjar.glitch.me/ping.png" aria-hidden="true" alt="" height="0">
     </body>
