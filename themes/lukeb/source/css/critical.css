@@ -136,7 +136,7 @@ h4 {
 
 .nav__item {
     height: 16px;
-    flex: 1 1 100%;
+    flex: 1 1 calc(33% - 32px);
     text-align: center;
     color: #ffffff;
     background: #bb1b1b;
@@ -144,24 +144,7 @@ h4 {
     padding: 8px;
     border: 4px solid #D53535;
     border-style: outset;
-    display: none;
     text-decoration: none;
-}
-
-.nav__item:not(.nav__toggle):hover {
-    border-style: inset;
-    padding-top: 10px;
-    padding-bottom: 6px;
-}
-
-.nav__toggle {
-    display: block;
-    position: relative;
-    padding-right: 28px;
-}
-
-#show-menu {
-    display: none;
 }
 
 .content {

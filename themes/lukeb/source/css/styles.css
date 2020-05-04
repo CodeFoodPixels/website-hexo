@@ -1,11 +1,3 @@
-.header__background {
-    animation: 3s linear infinite stars;
-}
-
-.header__spaceship-image {
-    animation: 1s ease-in-out alternate infinite spaceship;
-}
-
 .easter {
     overflow: hidden;
 }
@@ -18,18 +10,8 @@
     animation: none;
 }
 
-.header__start {
-    animation: 1.5s linear alternate infinite blink;
-}
-
 .easter .header__start {
     animation: none;
-}
-
-.nav__toggle:after {
-    content: "+";
-    position: absolute;
-    right: 8px;
 }
 
 .nav__toggle-checkbox:checked~.nav__item:not(.nav__toggle) {
@@ -140,6 +122,20 @@
 
     to {
         color: rgba(255, 255, 255, 0);
+    }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .header__background {
+        animation: 3s linear infinite stars;
+    }
+
+    .header__spaceship-image {
+        animation: 1s ease-in-out alternate infinite spaceship;
+    }
+
+    .header__start {
+        animation: 1.5s linear alternate infinite blink;
     }
 }
 
