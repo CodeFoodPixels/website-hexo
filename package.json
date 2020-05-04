@@ -8,7 +8,7 @@
     "serve": "hexo serve"
   },
   "hexo": {
-    "version": "3.7.1"
+    "version": "4.2.0"
   },
   "dependencies": {
     "hexo": "^4.0.0",
