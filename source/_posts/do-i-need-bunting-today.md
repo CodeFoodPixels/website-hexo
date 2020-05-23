@@ -1,12 +1,12 @@
 ---
 title: Do I need bunting today?
-date: 2020-05-08 10:00:00
+date: 2020-05-22 10:00:00
 tags:
  - web development
  - website
  - announcements
 ---
-Last week an idea popped into my head, I built it in a few hours and today, as it's a bank holiday, I'm launching it into the world!
+A couple of weeks ago an idea popped into my head, I built it in a few hours and today, as it's a bank holiday, I'm launching it into the world!
 
 Introducing [Do I need bunting today?](https://doineedbuntingtoday.com)!
 
