@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
+    "build": "hexo generate && cp -r source/.well-known public/",
+    "clean": "hexo clean",
     "new": "hexo new",
     "serve": "hexo serve"
   },
